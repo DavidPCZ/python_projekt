@@ -5,12 +5,12 @@ from PIL import ImageTk, Image
 
 
 def mainf(xvalue, yvalue):
-    root = Tk()
+    root = Toplevel()
     frm = ttk.Frame(root, padding=10)
     canvas = Canvas(root, width=930, height=807)
     canvas.pack()
 
-    img = ImageTk.PhotoImage(Image.open("compass.jpg"))
+    img = ImageTk.PhotoImage(Image.open("polcompass.jpg"))
     canvas.create_image(0, 0, anchor=NW, image=img)
 
     xpos = (img.width() / 2 - 14)
