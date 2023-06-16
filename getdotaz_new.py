@@ -20,7 +20,7 @@ def getdotazf(id_otazky, data):
         (9, "dgfdgfdfg", "X", -1),
         (10, "fghfgh", "X", 1)
     ]
-    global pocet_otazek;
+    global pocet_otazek
     pocet_otazek = len(data_list)
 
     cursor.executemany("INSERT INTO otazky VALUES (?,?,?,?)", data_list)
