@@ -18,5 +18,6 @@ Label(okno, text="Tento program za pomocí vašich odpovědí na otázky vypoč�
 Button(okno, text="Začít test", font=("Arial", 10), height=2, width=25, command=dalsi).pack()
 
 mainloop()
+
 # graf.kresgraf(5,5)
 # samostatné zavolání funguje
