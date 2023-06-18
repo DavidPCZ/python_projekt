@@ -13,12 +13,16 @@ def getdotazf(id_otazky, data):
         (2, "Měla by minimální mzda do roku 2025 dosáhnout 20 000 Kč?", "X", -1),
         (3, "Mělo by Česko příjmout Euro?", "Y", -1),
         (4, "Stát by měl do hospodářství zasahovat co nejméně", "X", 1),
-        (5, "FGFG", "X", 1),
-        (6, "asdasd", "X", 1),
-        (7, "asdasd", "Y", -1),
-        (8, "dfsdf", "X", 1),
-        (9, "dgfdgfdfg", "X", -1),
-        (10, "fghfgh", "X", 1)
+        (5, "Občané by měli mít právo rozhodovat v referendech i o důležitých otázkách", "Y", 1),
+        (6, "Souhlasím s vyšším zdaněním fyzických osob, které vydělávají více než trojnásobek průměrné mzdy", "X", -1),
+        (7, "Měly by být znovu zavedeny poplatky u lékaře a za pobyt v nemocnici?", "X", 1),
+        (8, "Měli by studenti na veřejných vysokých školách platit školné?", "X", 1),
+        (9, "Měla by se zrušit inkluze ve školách?", "Y", 1),
+        (10, "Mělo by být vlastnictví zbraně zakotveno v Listině základních práv a svobod?", "X", 1),
+        (11, "Měla by česká vláda podporovat Evropskou komisi a Evropský parlament v kritice Polska a Maďarska?", "Y", -1),
+        (12, "Podporujete tzv. Green deal?", "Y", -1),
+        (13, "Lidé by měli mít možnost připlatit si za nadstandart ve zdravotnictví", "X", 1),
+        (14, "Vzhledem k neúměrně vysokým cenám bydlení ve větším městech by se měla zavést částečná regulace pro investory do nemovitostí", "X", 1)
     ]
     global pocet_otazek
     pocet_otazek = len(data_list)
