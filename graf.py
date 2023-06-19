@@ -2,6 +2,19 @@ import tkinter
 from tkinter import *
 from tkinter import ttk
 from PIL import ImageTk, Image
+import pyexcel as pe
+import python_project
+import getdotaz_new
+
+"""
+def zaznamenej(nametext, xvalue, yvalue):
+    data =[["as", "as", "as"]]
+
+    pe.save_as(array=data, dest_file_name="data.ods")
+ """
+    
+
+
 
 def kresgraf(xvalue, yvalue):
     ratio = 0.9 # Ratio mění velikost dle procent (hodnota * 100%)
@@ -24,6 +37,34 @@ def kresgraf(xvalue, yvalue):
     dotres = ImageTk.PhotoImage(dot.resize((round(25*ratio), round(25*ratio))))  # 12 je ještě akceptovatelné v poměru velikost-přesnost
     canvas.create_image(xpos + (xvalue * round(36*ratio)), ypos - (xvalue * round(36*ratio)),
                         image=dotres)  # začátek střed, 1 v hodnotách je jeden blok
+    
+
+    strany = ["KSČM", "SocDem", "Zelení", "Piráti", "KDU-ČSL", "ANO", "STAN", "TOP 09", "ODS", "SPD", "Trikolóra", "Svobodní" ]
+    souradnice = [[-7,6],[-5, -2],[-2,-5],[-1,-6],[1,5],[2,4],[2,-3],[5,-2],[6,3],[3,6],[6,5],[7,2]]    
+    
+    min_rozdil = 100
+    min_rozdil_strana = ""
+    for i in range(len(strany)):
+        aktualnix = souradnice[i][0]
+        aktualniy = souradnice[i][1]
+                
+        #print(aktualnix)
+        #print(aktualniy)
+                
+        rozdil_x = abs(xvalue - aktualnix)
+        rozdil_y = abs(yvalue - aktualniy)
+        rozdil_celkem = rozdil_x + rozdil_y
+    
+        if(rozdil_celkem < min_rozdil):
+            min_rozdil = rozdil_celkem
+            min_rozdil_strana = strany[i]
+    
+            #print(min_rozdil, min_rozdil_strana)
+                      
+        
+        
+    nejblizsi_strana = tkinter.Label(root, text="Vaše nejbližší strana: " + min_rozdil_strana)
+    nejblizsi_strana.pack()
 
     nametext = tkinter.Label(root, text="Zadejte jméno")
     nametext.pack()
@@ -31,7 +72,7 @@ def kresgraf(xvalue, yvalue):
     nameentry = ttk.Entry(root)
     nameentry.pack()
 
-    enter = tkinter.Button(root, text="Poslat", font=("Arial", 10), height=1, width=5)
+    enter = tkinter.Button(root, text="Poslat", font=("Arial", 10), height=1, width=5, command=zaznamenej)
     enter.pack()
 
     mainloop()
