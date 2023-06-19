@@ -35,7 +35,7 @@ def kresgraf(xvalue, yvalue):
 
     dot = Image.open("dot.png")
     dotres = ImageTk.PhotoImage(dot.resize((round(25*ratio), round(25*ratio))))  # 12 je ještě akceptovatelné v poměru velikost-přesnost
-    canvas.create_image(xpos + (xvalue * round(36*ratio)), ypos - (xvalue * round(36*ratio)),
+    canvas.create_image(xpos + (xvalue * round(36*ratio)), ypos - (yvalue * round(36*ratio)),
                         image=dotres)  # začátek střed, 1 v hodnotách je jeden blok
 
     strany = ["KSČM", "SocDem", "Zelení", "Piráti", "KDU-ČSL", "ANO", "STAN", "TOP 09", "ODS", "SPD", "Trikolóra", "Svobodní" ]
