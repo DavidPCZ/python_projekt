@@ -23,6 +23,7 @@ def getdotazf(id_otazky, data):
         (12, "Podporujete tzv. Green deal?", "Y", -1),
         (13, "Lidé by měli mít možnost připlatit si za nadstandart ve zdravotnictví", "X", 1),
         (14, "Vzhledem k neúměrně vysokým cenám bydlení ve větším městech by se měla zavést částečná regulace pro investory do nemovitostí", "X", 1)
+        (15, "-------------", "X", 1)
     ]
     global pocet_otazek
     pocet_otazek = len(data_list)
