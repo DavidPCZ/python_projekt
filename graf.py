@@ -6,15 +6,11 @@ import pyexcel as pe
 import python_project
 import getdotaz_new
 
-"""
+
 def zaznamenej(nametext, xvalue, yvalue):
-    data =[["as", "as", "as"]]
+    data =[[nametext, xvalue, yvalue]]
 
     pe.save_as(array=data, dest_file_name="data.ods")
- """
-    
-
-
 
 def kresgraf(xvalue, yvalue):
     ratio = 0.9 # Ratio mění velikost dle procent (hodnota * 100%)
@@ -72,7 +68,7 @@ def kresgraf(xvalue, yvalue):
     nameentry = ttk.Entry(root)
     nameentry.pack()
 
-    enter = tkinter.Button(root, text="Poslat", font=("Arial", 10), height=1, width=5, command=zaznamenej)
+    enter = tkinter.Button(root, text="Poslat", font=("Arial", 10), height=1, width=5, command = zaznamenej(nametext, xvalue, yvalue) ) 
     enter.pack()
 
     mainloop()
