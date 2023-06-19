@@ -22,7 +22,7 @@ def getdotazf(id_otazky, data):
         (11, "Měla by česká vláda podporovat Evropskou komisi a Evropský parlament v kritice Polska a Maďarska?", "Y", -1),
         (12, "Podporujete tzv. Green deal?", "Y", -1),
         (13, "Lidé by měli mít možnost připlatit si za nadstandart ve zdravotnictví", "X", 1),
-        (14, "Vzhledem k neúměrně vysokým cenám bydlení ve větším městech by se měla zavést částečná regulace pro investory do nemovitostí", "X", 1)
+        (14, "Vzhledem k neúměrně vysokým cenám bydlení ve větším městech by se měla zavést částečná regulace pro investory do nemovitostí", "X", 1),
         (15, "-------------", "X", 1)
     ]
     global pocet_otazek
