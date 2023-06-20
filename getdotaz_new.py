@@ -13,7 +13,7 @@ def getdotazf(id_otazky, data):
         (2, "Měla by minimální mzda do roku 2025 dosáhnout 20 000 Kč?", "X", -1),
         (3, "Mělo by Česko příjmout Euro?", "Y", -1),
         (4, "Stát by měl do hospodářství zasahovat co nejméně", "X", 1),
-        (5, "Občané by měli mít právo rozhodovat v referendech i o důležitých otázkách", "Y", 1),
+        (5, "Občané by měli mít právo rozhodovat v referendech i o důležitých otázkách", "Y", -1),
         (6, "Souhlasím s vyšším zdaněním fyzických osob, které vydělávají více než trojnásobek průměrné mzdy", "X", -1),
         (7, "Měly by být znovu zavedeny poplatky u lékaře a za pobyt v nemocnici?", "X", 1),
         (8, "Měli by studenti na veřejných vysokých školách platit školné?", "X", 1),
