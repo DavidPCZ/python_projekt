@@ -1,1 +1,17 @@
+https://github.com/DavidPCZ/python_projekt/
+
+getdotaz_new.py
+V souboru se nachází funkce, která obshauje 15 otázek a informace o následném posunu uživatele na kompasu dle odpovědí.
+Argumenty je automaticky generovaté id_otazky a data, což představuje index konkrétní informace kterou chci získat a následně použít.
+
+main.py:
+Tento soubor vygeneruje úvodní okno, které vede na další okno s otázkami.
+
+python_project.py
+python_project_py je zodpovědný za postupné zobrazování otázek a odesílání dat o odpovědích. S tímto programem uživatel interaguje dokud neodpoví na všechny otázky.
+
+graf.py
+Tento program se zobrazí na samém konci kdy uživatel odpověděl na všechny otázky a naplnil tak hodnoty pro osu X a Y,
+odpovídající zobrazení se ukáže na kompasu. Dále se zobrazí strana která byla vypočítána pomocí hodnot x a y jako
+ta s nejnižším rozdílem. Dále je možné vepsat jméno a uložit spolu se souřadnicemi do tabulky.
 
