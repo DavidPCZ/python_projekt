@@ -24,7 +24,7 @@ def kresgraf(xvalue, yvalue):
         messagebox.showinfo(message="Data byla uložena do souboru data.ods ve složce projektu")
         root.destroy()
 
-    ratio = 0.85  # Ratio mění velikost dle procent (hodnota * 100%)
+    ratio = 0.80  # Ratio mění velikost dle procent (hodnota * 100%)
     root = Tk()
     canvas = Canvas(root, width=round(930*ratio), height=round(807*ratio))
     canvas.pack()
@@ -67,7 +67,7 @@ def kresgraf(xvalue, yvalue):
     
             #print(min_rozdil, min_rozdil_strana)
 
-    nejblizsi_strana = tkinter.Label(root, text="Vaše nejbližší strana: " + min_rozdil_strana)
+    nejblizsi_strana = tkinter.Label(root,font=("Arial", 25), text="Vaše nejbližší strana: " + min_rozdil_strana)
     nejblizsi_strana.pack()
 
     nametext = tkinter.Label(root, text="Zadejte jméno")
