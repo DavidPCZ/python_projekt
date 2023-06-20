@@ -16,7 +16,7 @@ def kresgraf(xvalue, yvalue):
             pe.save_as(array=[["Jméno", "OsaX", "OsaY"]], dest_file_name="data.ods")
             sheet = pe.get_sheet(file_name="data.ods")
 
-        data = [str(nametext), str(xvalue), str(yvalue)]
+        data = [str(nametext), xvalue, yvalue]
 
         sheet.row += data
         sheet.save_as("data.ods")
