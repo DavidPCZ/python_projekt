@@ -12,6 +12,7 @@ def dalsi():
       okno.destroy()
       pp.otazky()
 
+
 Label(okno, text="Politický kompas", font=("Arial", 60)).pack()
 Label(okno, text="Tento program za pomocí vašich odpovědí na otázky vypočítá, kde se na politickém kompasu nacházíte",
       font=("Arial", 15)).pack(expand=True, fill=BOTH)
